@@ -45,6 +45,10 @@ def calcular_area_do_circulo(raio):
     except TypeError:
         return 'Falha no Calculo - Raio não é um número'
 
+def calcular_volume_do_paralelograma(largura, comprimento, altura):
+    return largura * comprimento * altura
+
+
 if __name__ == '__main__':
 
     print_hi('Claudio')
@@ -71,11 +75,14 @@ if __name__ == '__main__':
     resultado = calcular_area_do_retangulo(6,9)
     print(f'A área do retangulo é {resultado}')
 
-    resultado = calcular_area_do_triangulo(10, 7)
+    resultado = calcular_area_do_triangulo(10,7)
     print(f'A área do triângulo é {resultado}')
 
     resultado = calcular_area_do_circulo(5)
     print(f'A área do círculo é {resultado}')
+
+    resultado = calcular_volume_do_paralelograma(5,10,2)
+    print(f'O volume do paralelograma é {resultado}')
 
     # Degustador / Teste
 '''
