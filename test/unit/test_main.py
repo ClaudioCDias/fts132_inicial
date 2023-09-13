@@ -164,7 +164,7 @@ def ler_dados_csv():
 
 @pytest.mark.parametrize('id, largura, comprimento, altura, resultado_esperado', ler_dados_csv())
 def testar_calcular_volume_do_paralelograma(id, largura, comprimento, altura, resultado_esperado):
-    # 1 - Configura
+    # 1º - Configura
     '''
     largura = 5
     comprimento = 10
@@ -172,8 +172,8 @@ def testar_calcular_volume_do_paralelograma(id, largura, comprimento, altura, re
     resultado_esperado = 100
     '''
 
-    # 2 - Executa
+    # 2º - Executa
     resultado_atual = calcular_volume_do_paralelograma(int(largura), int(comprimento), int(altura))
 
-    # 3 - Valida
+    # 3º - Valida
     assert resultado_atual == int(resultado_esperado)
