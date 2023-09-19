@@ -209,7 +209,7 @@ def testar_login_do_usuario():
     valor = frase[7:18]           # 167 Extraia o R$ 1.987,65
     print(f'O valor é: {valor}')
 
-# TuDO: Controlar o tempo entre as requisições na sequência
+# TUDO: Controlar o tempo entre as requisições na sequência
 '''
 def testar_sequencia_de_testes():
     testar_criar_usuario()
