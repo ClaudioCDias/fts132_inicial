@@ -26,12 +26,11 @@ class TestConsultaPreparatrioCTFLAT():
     def test_consultaPreparatrioCTFLAT(self):
         self.driver.get("https://www.iterasys.com.br/pt")
         self.driver.set_window_size(1366, 728)
-        time.sleep(3)  # pausa forçada / "alfinete" / sempre deve remover antes de salvar no repositório
         self.driver.find_element(By.CSS_SELECTOR, "#\\31 6237702146520 > .item-pill").click()
         self.driver.find_element(By.CSS_SELECTOR, ".feature-list-item:nth-child(4) .feature-nav-hover").click()
         self.driver.execute_script("window.scrollTo(0,0)")
         assert self.driver.find_element(By.CSS_SELECTOR, "h1:nth-child(1)").text == "Preparatório CTFL-AT"
         assert self.driver.find_element(By.CSS_SELECTOR,
                                         ".content-purchase-info:nth-child(2) .content-price-installments-amount").text == "R$ 24,83"
-        time.sleep(30) # pausa forçada / "alfinete" / sempre deve remover antes de salvar no repositório
+        # time.sleep(30) # pausa forçada / "alfinete" / sempre deve remover antes de salvar no repositório
 
