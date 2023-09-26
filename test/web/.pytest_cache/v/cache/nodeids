@@ -1,3 +1,5 @@
 [
-  "test_selenium_ide.py::TestConsultaPreparatrioCTFLAT::test_consultaPreparatrioCTFLAT"
+  "test_meu_selenium_webdriver02.py::Test_selenium_webdriver::testar_comprar_curso_PreparatorioCTFLAT",
+  "test_selenium_ide.py::TestConsultaPreparatrioCTFLAT::test_consultaPreparatrioCTFLAT",
+  "test_selenium_webdriver.py::Test_selenium_webdriver::testar_comprar_curso_PreparatorioCTFLAT"
 ]

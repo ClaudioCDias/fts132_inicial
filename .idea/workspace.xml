@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="690278a5-f917-4eeb-a374-73e6a54e109a" name="Changes" comment="Teste do Selenium IDE, código gerado do site da iterasys e instalação do driver para o chrome.">
+      <change afterPath="$PROJECT_DIR$/test/web/test_meu_selenium_webdriver02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/web/test_selenium_webdriver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/web/test_selenium_ide.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/web/test_selenium_ide.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/web/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/test/web/.pytest_cache/v/cache/lastfailed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/web/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/test/web/.pytest_cache/v/cache/nodeids" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,23 +45,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.pytest for test_selenium_ide.TestConsultaPreparatrioCTFLAT.test_consultaPreparatrioCTFLAT">
-    <configuration name="02_teste_selenium_ide02" type="tests" factoryName="py.test" temporary="true">
-      <module name="fts132_inicial" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/web/.pytest_cache" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;02_teste_selenium_ide02&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.pytest for test_meu_selenium_webdriver02.Test_selenium_webdriver.testar_comprar_curso_PreparatorioCTFLAT">
     <configuration name="pytest for 02_teste_selenium_ide02.Test02preparatorioctflat.test_02preparatorioctflat" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="fts132_inicial" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -72,6 +59,22 @@
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;02_teste_selenium_ide02.Test02preparatorioctflat.test_02preparatorioctflat&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_meu_selenium_webdriver02.Test_selenium_webdriver.testar_comprar_curso_PreparatorioCTFLAT" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="fts132_inicial" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/web" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_meu_selenium_webdriver02.Test_selenium_webdriver.testar_comprar_curso_PreparatorioCTFLAT&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -107,12 +110,29 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_selenium_webdriver.Test_selenium_webdriver.testar_comprar_curso_PreparatorioCTFLAT" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="fts132_inicial" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/web" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_selenium_webdriver.Test_selenium_webdriver.testar_comprar_curso_PreparatorioCTFLAT&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_meu_selenium_webdriver02.Test_selenium_webdriver.testar_comprar_curso_PreparatorioCTFLAT" />
+        <item itemvalue="Python tests.pytest for test_selenium_webdriver.Test_selenium_webdriver.testar_comprar_curso_PreparatorioCTFLAT" />
         <item itemvalue="Python tests.pytest for test_selenium_ide.TestConsultaPreparatrioCTFLAT.test_consultaPreparatrioCTFLAT" />
         <item itemvalue="Python tests.pytest for test_selenium_ide.TestConsultaPreparatrioCTFLAT" />
         <item itemvalue="Python tests.pytest for 02_teste_selenium_ide02.Test02preparatorioctflat.test_02preparatorioctflat" />
-        <item itemvalue="Python tests.02_teste_selenium_ide02" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695733180436</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Teste do Selenium IDE, código gerado do site da iterasys e instalação do driver para o chrome.">
+      <option name="closed" value="true" />
+      <created>1695733877361</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695733877361</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
