@@ -30,15 +30,26 @@ class Test_selenium_webdriver():
         self.driver.quit()
 
     # Definição do Teste
-    def testar_comprar_curso_PreparatorioCTFLAT(self):
+    @pytest.mark.parametrize('termo, curso, preço',[
+        ('ctfl-at', 'ctfl-at', 'R$ 24,83'),
+        ('ctfl', 'preparatório ctfl', 'R$ 199,00'),
+    ])
+    def testar_comprar_curso_PreparatorioCTFLAT(self, termo, curso, preco):
+        # O Selenium abre a url indicada - site alvo do teste
         self.driver.get('https://www.iterasys.com.br/pt')
+        # O Selenium clica na caixa de pesquisa
+        # self.driver.find_element(By.ID, 'searchtext').click()
+        # O Selenium apaga o conteúdo da caixa de pesquisa
+        # self.driver.find_element(By.ID, 'searchtext').clear()
+        # O Selenium escreve mantis na caixa de pesquisa
+        # self.driver.find_element(By.ID, 'searchtext').send_keys(termo)
         # O Selenium clica no botão cursos
         self.driver.find_element(By.ID, '16237702146520').click()
         # O selenium clica em preparatorio ctfl-at
         self.driver.find_element(By.CSS_SELECTOR, 'a[href="/pt/cursos/preparatorio-ctfl-at"] div').click()
         # O Selenium valida o nome do curso no carrinho de compras
         time.sleep(30)
-        assert self.driver.find_element(By.CSS_SELECTOR, 'h1[style="--fg:#283252; --primary-light:#77CCA6;"]').text == 'Preparatório CTFL-AT'
+        assert self.driver.find_element(By.CSS_SELECTOR, 'h1[style="--fg:#283252; --primary-light:#77CCA6;"]').text == curso
         # O Selenium valida o preço do curso
-        assert self.driver.find_element(By.CSS_SELECTOR, 'p[class="content-price-installments-amount"]').text == 'R$ 24,83'
+        assert self.driver.find_element(By.CSS_SELECTOR, 'p[class="content-price-installments-amount"]').text == preco
 
