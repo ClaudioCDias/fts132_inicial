@@ -1,3 +1,4 @@
 {
-  "test_selenium_webdriver.py::Test_selenium_webdriver::testar_comprar_curso_PreparatorioCTFLAT": true
+  "test_selenium_webdriver.py::Test_selenium_webdriver::testar_comprar_curso_PreparatorioCTFLAT": true,
+  "test_meu_selenium_webdriver02.py": true
 }

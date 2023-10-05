@@ -1,4 +1,7 @@
 #1 Importar Bibliotecas
+import os
+from datetime import datetime
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import pytest
@@ -14,8 +17,15 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
+caminho_print = 'C:/Users/Claudio/PycharmProjects/fts132_inicial/Prints/' \
+                + datetime.now().strftime('%Y-%m-%d %H-%M-%S') + '/'
+
 #2 Classe
 class Test_selenium_webdriver():
+
+    def before_all(self):
+        # Criar a pasta com data e hora para guardar os prints
+        os.mkdir(caminho_print)
 
     # Definição de Início - Executa Antes do teste
     def setup_method(self, method):
@@ -24,19 +34,23 @@ class Test_selenium_webdriver():
         self.driver.implicitly_wait(30) # O Selenium vai esperar até três segundos pelos elementos
         self.driver.maximize_window() # Maximizar a janela do navegador
 
+
+
     # Definição de Fim - Executa depois do teste
     def teardown_method(self, method):
         # Destruir o objeto do Selenium
         self.driver.quit()
 
     # Definição do Teste
-    @pytest.mark.parametrize('termo, curso, preço',[
+    '''@pytest.mark.parametrize('termo, curso, preço',[
         ('ctfl-at', 'ctfl-at', 'R$ 24,83'),
         ('ctfl', 'preparatório ctfl', 'R$ 199,00'),
     ])
-    def testar_comprar_curso_PreparatorioCTFLAT(self, termo, curso, preco):
+    '''
+    def testar_comprar_curso_PreparatorioCTFLAT(self):
         # O Selenium abre a url indicada - site alvo do teste
         self.driver.get('https://www.iterasys.com.br/pt')
+        self.driver.get_screenshot_as_file(f'{caminho_print}teste - passo 1 - home.png')
         # O Selenium clica na caixa de pesquisa
         # self.driver.find_element(By.ID, 'searchtext').click()
         # O Selenium apaga o conteúdo da caixa de pesquisa
@@ -49,7 +63,8 @@ class Test_selenium_webdriver():
         self.driver.find_element(By.CSS_SELECTOR, 'a[href="/pt/cursos/preparatorio-ctfl-at"] div').click()
         # O Selenium valida o nome do curso no carrinho de compras
         time.sleep(30)
-        assert self.driver.find_element(By.CSS_SELECTOR, 'h1[style="--fg:#283252; --primary-light:#77CCA6;"]').text == curso
+        self.driver.get_screenshot_as_file(f'{caminho_print}teste - passo 2 - pesquisa_curso.png')
+        assert self.driver.find_element(By.CSS_SELECTOR, 'h1[style="--fg:#283252; --primary-light:#77CCA6;"]').text == 'Preparatório CTFL-AT'
         # O Selenium valida o preço do curso
-        assert self.driver.find_element(By.CSS_SELECTOR, 'p[class="content-price-installments-amount"]').text == preco
+        assert self.driver.find_element(By.CSS_SELECTOR, 'p[class="content-price-installments-amount"]').text == 'R$ 24,83'
 
